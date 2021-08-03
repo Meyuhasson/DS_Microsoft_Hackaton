@@ -42,6 +42,7 @@
   </component>
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/MALICIOUS/Geek/angler/1/indexsdpo3i3-dskuh3u4_indexm.html" />
   </component>
   <component name="RunManager" selected="Python.files_predictor">
     <configuration name="classifier" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
@@ -57,6 +58,27 @@
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <option name="SCRIPT_NAME" value="$PROJECT_DIR$/classifier.py" />
+      <option name="PARAMETERS" value="C:\Users\edenm\Documents\GitHub\DS_Microsoft_Hackaton\MALICIOUS\Geek\angler\1\fortinetdonation_indexm.html" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="feature_extraction" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="DS_Microsoft_Hackaton" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/feature_extraction.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -78,6 +100,27 @@
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <option name="SCRIPT_NAME" value="$PROJECT_DIR$/files_predictor.py" />
+      <option name="PARAMETERS" value="C:\Users\edenm\Documents\GitHub\DS_Microsoft_Hackaton\MALICIOUS\Geek\angler\1\indexsdpo3i3-dskuh3u4_indexm.html" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="js_extraction" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="DS_Microsoft_Hackaton" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/js_extraction.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -86,10 +129,18 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
+    <list>
+      <item itemvalue="Python.classifier" />
+      <item itemvalue="Python.files_predictor" />
+      <item itemvalue="Python.feature_extraction" />
+      <item itemvalue="Python.js_extraction" />
+    </list>
     <recent_temporary>
       <list>
         <item itemvalue="Python.files_predictor" />
         <item itemvalue="Python.classifier" />
+        <item itemvalue="Python.js_extraction" />
+        <item itemvalue="Python.feature_extraction" />
       </list>
     </recent_temporary>
   </component>
@@ -116,21 +167,91 @@
     </option>
   </component>
   <component name="WindowStateProjectService">
-    <state width="1515" height="210" key="GridCell.Tab.0.bottom" timestamp="1627981172105">
+    <state x="223" y="67" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1628007704617">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1515" height="210" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1627981172105" />
-    <state width="1515" height="210" key="GridCell.Tab.0.center" timestamp="1627981172105">
+    <state x="223" y="67" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1536.824@0.0.1536.824" timestamp="1628007704617" />
+    <state x="548" y="117" key="#com.intellij.ide.macro.MacrosDialog" timestamp="1628006054766">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1515" height="210" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1627981172105" />
-    <state width="1515" height="210" key="GridCell.Tab.0.left" timestamp="1627981172089">
+    <state x="548" y="117" key="#com.intellij.ide.macro.MacrosDialog/0.0.1536.824@0.0.1536.824" timestamp="1628006054766" />
+    <state x="0" y="165" key="#xdebugger.XInspectDialog" timestamp="1628003058797">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1515" height="210" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1627981172089" />
-    <state width="1515" height="210" key="GridCell.Tab.0.right" timestamp="1627981172105">
+    <state x="0" y="165" key="#xdebugger.XInspectDialog/0.0.1536.824@0.0.1536.824" timestamp="1628003058797" />
+    <state width="1406" height="466" key="DebuggerActiveHint" timestamp="1628004346970">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1515" height="210" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1627981172105" />
+    <state width="1406" height="466" key="DebuggerActiveHint/0.0.1536.824@0.0.1536.824" timestamp="1628004346970" />
+    <state x="548" y="167" key="FileChooserDialogImpl" timestamp="1628007701877">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="548" y="167" key="FileChooserDialogImpl/0.0.1536.824@0.0.1536.824" timestamp="1628007701877" />
+    <state width="1515" height="210" key="GridCell.Tab.0.bottom" timestamp="1628007982764">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1515" height="210" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1628007982764" />
+    <state width="1515" height="210" key="GridCell.Tab.0.center" timestamp="1628007982764">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1515" height="210" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1628007982764" />
+    <state width="1515" height="210" key="GridCell.Tab.0.left" timestamp="1628007982764">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1515" height="210" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1628007982764" />
+    <state width="1515" height="210" key="GridCell.Tab.0.right" timestamp="1628007982764">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1515" height="210" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1628007982764" />
+    <state width="1515" height="261" key="GridCell.Tab.1.bottom" timestamp="1628007730880">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1515" height="261" key="GridCell.Tab.1.bottom/0.0.1536.824@0.0.1536.824" timestamp="1628007730880" />
+    <state width="1515" height="261" key="GridCell.Tab.1.center" timestamp="1628007730880">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1515" height="261" key="GridCell.Tab.1.center/0.0.1536.824@0.0.1536.824" timestamp="1628007730880" />
+    <state width="1515" height="261" key="GridCell.Tab.1.left" timestamp="1628007730880">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1515" height="261" key="GridCell.Tab.1.left/0.0.1536.824@0.0.1536.824" timestamp="1628007730880" />
+    <state width="1515" height="261" key="GridCell.Tab.1.right" timestamp="1628007730880">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1515" height="261" key="GridCell.Tab.1.right/0.0.1536.824@0.0.1536.824" timestamp="1628007730880" />
+    <state width="775" height="419" key="XDebugger.FullValuePopup" timestamp="1628007223712">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="775" height="419" key="XDebugger.FullValuePopup/0.0.1536.824@0.0.1536.824" timestamp="1628007223712" />
+    <state x="431" y="145" width="672" height="678" key="search.everywhere.popup" timestamp="1627998590308">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="431" y="145" width="672" height="678" key="search.everywhere.popup/0.0.1536.824@0.0.1536.824" timestamp="1627998590308" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/files_predictor.py</url>
+          <line>41</line>
+          <option name="timeStamp" value="29" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/feature_extraction.py</url>
+          <line>42</line>
+          <option name="timeStamp" value="30" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
+    <watches-manager>
+      <configuration name="PythonConfigurationType">
+        <watch expression="all_samples[0]" language="Python" />
+        <watch expression="all_samples" language="Python" />
+        <watch expression="random_forest.predict(tfidf_score) " language="Python" />
+        <watch expression="list_of_vectors_benign[0]" language="Python" />
+        <watch expression="flat_benign[0]" language="Python" />
+        <watch expression="flat_benign" />
+      </configuration>
+    </watches-manager>
   </component>
 </project>

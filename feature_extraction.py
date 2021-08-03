@@ -43,6 +43,10 @@ def tfidf_extractor(ngramx,ngramy):
     list_of_vectors_benign = vectorizer.transform(flat_benign)
     list_of_vectors_malicious = vectorizer.transform(flat_malicious)
 
+    # save model weights
+    pickle.dump(vectorizer, open("tfidfvectorizer.sav", 'wb'))
+
+
     return list_of_vectors_benign, list_of_vectors_malicious
 
 #list_of_vectors_benign, list_of_vectors_malicious = tfidf_extractor(1,1)
