@@ -5,6 +5,7 @@ Anlysis list:
 2. PE - Raz 
 3. ELF - Harel
 4. Communication - David
+5. Web client - Amit Mark
 
 ### 13:00 P.M. lunch time
  Every individual has to demonstate POC untill 13:00 P.M.
