@@ -42,7 +42,7 @@
   </component>
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/MALICIOUS/Geek/bleeding life/PluginDetect_deobfuscated.js" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/BENIGN/jasmine/Gruntfile-obfuscated.js" />
   </component>
   <component name="RunManager" selected="Python.final_oneshot">
     <configuration name="JS_classifier" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
@@ -142,7 +142,7 @@
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <option name="SCRIPT_NAME" value="$PROJECT_DIR$/final_oneshot.py" />
-      <option name="PARAMETERS" value="C:\Users\edenm\Documents\GitHub\DS_Microsoft_Hackaton\MALICIOUS\Geek\bleeding life\PluginDetect_deobfuscated.js" />
+      <option name="PARAMETERS" value="C:\Users\edenm\Documents\GitHub\DS_Microsoft_Hackaton\BENIGN\jasmine\Gruntfile-obfuscated.js" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
       <option name="MODULE_MODE" value="false" />
@@ -190,10 +190,10 @@
     </option>
   </component>
   <component name="WindowStateProjectService">
-    <state x="223" y="67" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1628069301756">
+    <state x="223" y="67" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1628074230416">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="223" y="67" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1536.824@0.0.1536.824" timestamp="1628069301756" />
+    <state x="223" y="67" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1536.824@0.0.1536.824" timestamp="1628074230416" />
     <state x="548" y="117" key="#com.intellij.ide.macro.MacrosDialog" timestamp="1628068874806">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
@@ -202,46 +202,46 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="0" y="165" key="#xdebugger.XInspectDialog/0.0.1536.824@0.0.1536.824" timestamp="1628003058797" />
-    <state width="1411" height="466" key="DebuggerActiveHint" timestamp="1628061801916">
+    <state width="1411" height="466" key="DebuggerActiveHint" timestamp="1628072826233">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1411" height="466" key="DebuggerActiveHint/0.0.1536.824@0.0.1536.824" timestamp="1628061801916" />
-    <state x="548" y="167" key="FileChooserDialogImpl" timestamp="1628069300024">
+    <state width="1411" height="466" key="DebuggerActiveHint/0.0.1536.824@0.0.1536.824" timestamp="1628072826233" />
+    <state x="548" y="167" key="FileChooserDialogImpl" timestamp="1628074229030">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="548" y="167" key="FileChooserDialogImpl/0.0.1536.824@0.0.1536.824" timestamp="1628069300024" />
-    <state width="1515" height="210" key="GridCell.Tab.0.bottom" timestamp="1628070787490">
+    <state x="548" y="167" key="FileChooserDialogImpl/0.0.1536.824@0.0.1536.824" timestamp="1628074229030" />
+    <state width="1515" height="174" key="GridCell.Tab.0.bottom" timestamp="1628074234492">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1515" height="210" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1628070787490" />
-    <state width="1515" height="210" key="GridCell.Tab.0.center" timestamp="1628070787490">
+    <state width="1515" height="174" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1628074234492" />
+    <state width="1515" height="174" key="GridCell.Tab.0.center" timestamp="1628074234492">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1515" height="210" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1628070787490" />
-    <state width="1515" height="210" key="GridCell.Tab.0.left" timestamp="1628070787490">
+    <state width="1515" height="174" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1628074234492" />
+    <state width="1515" height="174" key="GridCell.Tab.0.left" timestamp="1628074234492">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1515" height="210" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1628070787490" />
-    <state width="1515" height="210" key="GridCell.Tab.0.right" timestamp="1628070787490">
+    <state width="1515" height="174" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1628074234492" />
+    <state width="1515" height="174" key="GridCell.Tab.0.right" timestamp="1628074234492">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1515" height="210" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1628070787490" />
-    <state width="1515" height="174" key="GridCell.Tab.1.bottom" timestamp="1628070612568">
+    <state width="1515" height="174" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1628074234492" />
+    <state width="1515" height="174" key="GridCell.Tab.1.bottom" timestamp="1628074237212">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1515" height="174" key="GridCell.Tab.1.bottom/0.0.1536.824@0.0.1536.824" timestamp="1628070612568" />
-    <state width="1515" height="174" key="GridCell.Tab.1.center" timestamp="1628070612568">
+    <state width="1515" height="174" key="GridCell.Tab.1.bottom/0.0.1536.824@0.0.1536.824" timestamp="1628074237212" />
+    <state width="1515" height="174" key="GridCell.Tab.1.center" timestamp="1628074237212">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1515" height="174" key="GridCell.Tab.1.center/0.0.1536.824@0.0.1536.824" timestamp="1628070612568" />
-    <state width="1515" height="174" key="GridCell.Tab.1.left" timestamp="1628070612568">
+    <state width="1515" height="174" key="GridCell.Tab.1.center/0.0.1536.824@0.0.1536.824" timestamp="1628074237212" />
+    <state width="1515" height="174" key="GridCell.Tab.1.left" timestamp="1628074237212">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1515" height="174" key="GridCell.Tab.1.left/0.0.1536.824@0.0.1536.824" timestamp="1628070612568" />
-    <state width="1515" height="174" key="GridCell.Tab.1.right" timestamp="1628070612568">
+    <state width="1515" height="174" key="GridCell.Tab.1.left/0.0.1536.824@0.0.1536.824" timestamp="1628074237212" />
+    <state width="1515" height="174" key="GridCell.Tab.1.right" timestamp="1628074237212">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1515" height="174" key="GridCell.Tab.1.right/0.0.1536.824@0.0.1536.824" timestamp="1628070612568" />
+    <state width="1515" height="174" key="GridCell.Tab.1.right/0.0.1536.824@0.0.1536.824" timestamp="1628074237212" />
     <state width="775" height="218" key="XDebugger.FullValuePopup" timestamp="1628069265896">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
@@ -271,13 +271,23 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
           <url>file://$PROJECT_DIR$/final_oneshot.py</url>
-          <line>59</line>
+          <line>63</line>
           <option name="timeStamp" value="53" />
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
           <url>file://$PROJECT_DIR$/final_oneshot.py</url>
-          <line>58</line>
+          <line>62</line>
           <option name="timeStamp" value="54" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/final_oneshot.py</url>
+          <line>32</line>
+          <option name="timeStamp" value="56" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/final_oneshot.py</url>
+          <line>59</line>
+          <option name="timeStamp" value="58" />
         </line-breakpoint>
       </breakpoints>
       <default-breakpoints>
@@ -291,6 +301,7 @@
     <watches-manager>
       <configuration name="PythonConfigurationType">
         <watch expression="Randomforest.predict_proba(tfidf_score)" language="Python" />
+        <watch expression="C:\Users\edenm\Documents\GitHub\DS_Microsoft_Hackaton\MALICIOUS\Geek\angler\201407\landing_page.html" language="Python" />
       </configuration>
     </watches-manager>
   </component>

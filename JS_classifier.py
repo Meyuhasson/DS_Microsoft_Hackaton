@@ -22,6 +22,7 @@ import sys
 # 0 - benign, 1 - malicious
 
 
+
 def extract_script_from_html(html: str):
     soup = bs(html, "html.parser")
     scripts = []

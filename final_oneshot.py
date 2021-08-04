@@ -21,18 +21,21 @@ import sys
 
 # 0 - benign, 1 - malicious
 
+staticscripts = []
 
 def extract_script_from_html(html: str):
+    global staticscripts
     soup = bs(html, "html.parser")
     scripts = []
     for script in soup.find_all("script"):
         scripts.append(script)
+    staticscripts = scripts
     return scripts
 
 def tokenize_html(html: str):
-    scripts_tokenize = ''
+    scripts_tokenize = []
     for script in extract_script_from_html(html):
-        scripts_tokenize += esprima.tokenize(script)
+        scripts_tokenize += esprima.tokenize(str(script))
     return scripts_tokenize
 
 def tokenize(file_path: str, js_file=True):
@@ -42,7 +45,8 @@ def tokenize(file_path: str, js_file=True):
                 return esprima.tokenize(f.read())
             else:
                 return tokenize_html(f.read())
-    except:
+    except Exception as e:
+        print(e)
         return []
 file_path = sys.argv[1]
 
@@ -55,7 +59,7 @@ flat = " ".join(["{0}_{1}".format(token.type,token.value.replace(' ','-')) for t
 tfidf_score = tfidf_vector.transform([flat])
 predict = Randomforest.predict(tfidf_score)
 
-output = {"Malicious": bool(predict), "Event": "-----------", "Confidence":Randomforest.predict_proba(tfidf_score).max(), "Multicase": "-----------"}
+output = {"Malicious": bool(predict), "Event": staticscripts, "Confidence":Randomforest.predict_proba(tfidf_score).max(), "Multicase": "-----------"}
 #output_file = open("output_file.json", "w")
 #pickle.dump(output, output_file)
 with open('output_file.json', 'w') as f:
