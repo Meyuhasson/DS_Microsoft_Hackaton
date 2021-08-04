@@ -40,6 +40,7 @@ for name in Names:
 	for filename in FileList:
 		print(filename)
 		label = int(filename.split('\\')[2])
+		print(label)
 		Im = Image.open(filename)
 		pixel = Im.load()
 		width, height = Im.size

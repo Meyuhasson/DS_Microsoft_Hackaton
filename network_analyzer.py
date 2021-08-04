@@ -81,40 +81,41 @@ if __name__ == '__main__':
     else:
         output_json = {"Malicious": False, "Event": "Benign Traffic", "Confidence": 1.0, "Multicase": pos}
     print(output_json)
-    with open('data.json', 'w') as f:
+    with open('output_file.json', 'w') as f:
         json.dump(output_json, f)
 
     # CLEAN UP
     import os
     import glob
-    for root, dirs, files in os.walk('./1_Pcap'):
-        for f in files:
-            os.unlink(os.path.join(root, f))
-        for d in dirs:
-            shutil.rmtree(os.path.join(root, d))
+    if args.retrain != "Y":
+        for root, dirs, files in os.walk('./1_Pcap'):
+            for f in files:
+                os.unlink(os.path.join(root, f))
+            for d in dirs:
+                shutil.rmtree(os.path.join(root, d))
 
-    for root, dirs, files in os.walk('./2_Session'):
-        for f in files:
-            os.unlink(os.path.join(root, f))
-        for d in dirs:
-            shutil.rmtree(os.path.join(root, d))
+        for root, dirs, files in os.walk('./2_Session'):
+            for f in files:
+                os.unlink(os.path.join(root, f))
+            for d in dirs:
+                shutil.rmtree(os.path.join(root, d))
 
-    for root, dirs, files in os.walk('./3_ProcessedSession'):
-        for f in files:
-            os.unlink(os.path.join(root, f))
-        for d in dirs:
-            shutil.rmtree(os.path.join(root, d))
+        for root, dirs, files in os.walk('./3_ProcessedSession'):
+            for f in files:
+                os.unlink(os.path.join(root, f))
+            for d in dirs:
+                shutil.rmtree(os.path.join(root, d))
 
-    for root, dirs, files in os.walk('./4_Png'):
-        for f in files:
-            os.unlink(os.path.join(root, f))
-        for d in dirs:
-            shutil.rmtree(os.path.join(root, d))
+        for root, dirs, files in os.walk('./4_Png'):
+            for f in files:
+                os.unlink(os.path.join(root, f))
+            for d in dirs:
+                shutil.rmtree(os.path.join(root, d))
 
-    for root, dirs, files in os.walk('./5_Mnist'):
-        for f in files:
-            os.unlink(os.path.join(root, f))
-        for d in dirs:
-            shutil.rmtree(os.path.join(root, d))
+        for root, dirs, files in os.walk('./5_Mnist'):
+            for f in files:
+                os.unlink(os.path.join(root, f))
+            for d in dirs:
+                shutil.rmtree(os.path.join(root, d))
 
 # See PyCharm help at https://www.jetbrains.com/help/pycharm/
