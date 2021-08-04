@@ -3,10 +3,7 @@ import js_extraction
 import pickle
 import os
 
-BENIGN_TFIDF_FNAME = "benign_tfidf.pickle"
-MALICIOUS_TFIDF_FNAME = "malicious_tfidf.pickle"
-
-def tfidf_extractor(ngramx,ngramy):
+def tfidf_extractor(ngramx,ngramy,BENIGN_TFIDF_FNAME,MALICIOUS_TFIDF_FNAME):
     flat_benign = []
     flat_malicious = []
     list_of_vectors_benign = []
@@ -37,9 +34,9 @@ def tfidf_extractor(ngramx,ngramy):
     
     print("[+] Training TfidfVectorizer")
     vectorizer = TfidfVectorizer(ngram_range=(ngramx,ngramy))
-    vectorizer.fit(flat_benign)
+    #vectorizer.fit(flat_benign)
     vectorizer.fit(flat_malicious)
-    
+
     list_of_vectors_benign = vectorizer.transform(flat_benign)
     list_of_vectors_malicious = vectorizer.transform(flat_malicious)
 
