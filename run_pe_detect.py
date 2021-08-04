@@ -23,6 +23,7 @@ path_to_pe = args.path
 result = subprocess.run(["floss.exe",path_to_pe], stdout=subprocess.PIPE)
 file_strings = result.stdout.decode('ascii').replace("\r","")
 
+
 model_path = 'rfc_model.sav' #files_path + '\\rfc_model.sav'
 vectorizer_path = 'vectorizer.sav' #files_path + '\\vectorizer.sav'
 
@@ -30,7 +31,10 @@ loaded_model = pickle.load(open(model_path, 'rb'))
 vectorizer = pickle.load(open(vectorizer_path, 'rb'))
 X = vectorizer.transform([file_strings])
 result = loaded_model.predict(X)[0]
+confidence = loaded_model.predict_proba(X)[0][result]
+most_important_vals = vectorizer.get_feature_names()[X.argmax()]
+dict_val = {"Malicious": str(result),"Event": "most suspicious str: " + most_important_vals,"Confidence": confidence,"Multicase": "Suspicious file strings"}
 
-dict_val = {"Malicious": str(result),"Event": "","Confidence": "","Multicase": ""}
+print(dict_val)
 with open('output_file.json', 'w+') as fp:
     json.dump(dict_val, fp)
