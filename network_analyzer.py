@@ -48,8 +48,8 @@ def analyze(path, weight_path):
     model = load_model(weight_path)
     print(test_data.shape)
     output = model.predict(test_data.reshape(-1, 28, 28, 1))
-    n_pos = [{"Session_Number": ind,"Malicious": x[1], "Benign" : x[0]} for ind,x in enumerate(output) if (x[0] < 0.5 and x[1] > 0.5)]
-    n_neg = [{"Session_Number": ind,"Malicious": x[1], "Benign" : x[0]} for ind,x in enumerate(output) if (x[0] > 0.5 and x[1] < 0.5)]
+    n_pos = [{"Session_Number": ind,"Malicious": float(x[1]), "Benign" : float(x[0])} for ind,x in enumerate(output) if (x[0] < 0.5 and x[1] > 0.5)]
+    n_neg = [{"Session_Number": ind,"Malicious": float(x[1]), "Benign" : float(x[0])} for ind,x in enumerate(output) if (x[0] > 0.5 and x[1] < 0.5)]
     output_mal_sess = "Malicious Sessions Confidence:" + str(n_pos)
     output_mal_pre = "Malicious Sessions In Pcap: " + str((len(n_pos)/len(output))*100) + "%"
     output_benign_sess = "Benign Sessions In Pcap: " + str((len(n_neg) / len(output))*100) + "%"
@@ -77,9 +77,9 @@ if __name__ == '__main__':
 
     pos, neg = analyze(MNIST_PATH, MODEL_WEIGHTS)
     if len(pos) >= 1:
-        output_json = {"Malicious": True, "Event": "Malicious Traffic Detected", "Confidence": max([x["Malicious"] for x in pos]), "Multicase": pos}
+        output_json = {"Malicious": True, "Event": "Malicious Traffic Detected", "Confidence": max([float(x["Malicious"]) for x in pos]), "Multicase": pos,  "Malicious Session Precentage": len(pos)/(len(pos)+len(neg)) }
     else:
-        output_json = {"Malicious": False, "Event": "Benign Traffic", "Confidence": 0.0, "Multicase": pos}
+        output_json = {"Malicious": False, "Event": "Benign Traffic", "Confidence": 1.0, "Multicase": pos}
     print(output_json)
     with open('data.json', 'w') as f:
         json.dump(output_json, f)
@@ -87,7 +87,6 @@ if __name__ == '__main__':
     # CLEAN UP
     import os
     import glob
-
     for root, dirs, files in os.walk('./1_Pcap'):
         for f in files:
             os.unlink(os.path.join(root, f))
