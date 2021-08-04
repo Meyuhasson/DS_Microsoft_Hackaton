@@ -58,13 +58,33 @@ def analyze(path, weight_path):
 # Press the green button in the gutter to run the script.
 if __name__ == '__main__':
     # Instantiate the parser
+
+    print(r"""\
+
+______               ______          _        _   
+|  _  \              | ___ \        | |      | |  
+| | | |___  ___ _ __ | |_/ /_ _  ___| | _____| |_ 
+| | | / _ \/ _ \ '_ \|  __/ _` |/ __| |/ / _ \ __|
+| |/ /  __/  __/ |_) | | | (_| | (__|   <  __/ |_ 
+|___/ \___|\___| .__/\_|  \__,_|\___|_|\_\___|\__|
+               | |                                
+               |_|
+Deep Packet Analysis Created By David Schiff                                  
+                    """)
+
     parser = argparse.ArgumentParser(description="DeepPacket - Deep Packet Analyzer")
     parser.add_argument('--preprocess', type=str,nargs='?',
                         help='Is preprocessing required? Y/N')
-    parser.add_argument('--retrain', type=str,nargs='?',
+    parser.add_argument('--train', type=str,nargs='?',
                         help='Is retraining required? Y/N Retraining will use the same folder as the testing folder'
                              'so clear out any remaining pcaps from testing there.')
+    parser.add_argument('--malicious-training-path',type=str,nargs='?',
+                        help='If retraining is required, add a malicious training path')
+    parser.add_argument('--benign-training-path',type=str,nargs='?',
+                        help='If retraining is required, add a benign training path')
     args = parser.parse_args()
+
+
     if args.preprocess == "Y":
         # If we preprocess then all the files in 0_Pcaps will be preprocessed
         p = subprocess.Popen(["powershell", "./1_Pcap2Session.ps1"]).wait()
@@ -74,6 +94,7 @@ if __name__ == '__main__':
         p = subprocess.Popen(["python", "3_Session2png.py"]).wait()
 
         p = subprocess.Popen(["python", "4_Png2Mnist.py"]).wait()
+
 
     pos, neg = analyze(MNIST_PATH, MODEL_WEIGHTS)
     if len(pos) >= 1:
@@ -87,7 +108,7 @@ if __name__ == '__main__':
     # CLEAN UP
     import os
     import glob
-    if args.retrain != "Y":
+    if args.train != "Y":
         for root, dirs, files in os.walk('./1_Pcap'):
             for f in files:
                 os.unlink(os.path.join(root, f))
