@@ -35,7 +35,7 @@ def extract_script_from_html(html: str):
 def tokenize_html(html: str):
     scripts_tokenize = []
     for script in extract_script_from_html(html):
-        scripts_tokenize += esprima.tokenize(str(script))
+        scripts_tokenize.append(esprima.tokenize(str(script)))
     return scripts_tokenize
 
 def tokenize(file_path: str, js_file=True):
@@ -54,15 +54,31 @@ file = tokenize(file_path,file_path.endswith('.js'))
 Randomforest = pickle.load(open(r"RandomForest_model.sav", "rb"))
 tfidf_vector = pickle.load(open(r"tfidfvectorizer.sav", "rb"))
 
-flat = " ".join(["{0}_{1}".format(token.type,token.value.replace(' ','-')) for token in file])
+if (file_path.endswith('.js')):
+    flat = " ".join(["{0}_{1}".format(token.type, token.value.replace(' ', '-')) for token in file])
+    tfidf_score = tfidf_vector.transform([flat])
+    predict = Randomforest.predict(tfidf_score)
+    output = {"Malicious": bool(predict), "Event": staticscripts,
+              "Confidence": Randomforest.predict_proba(tfidf_score).max(), "Multicase": "-----------"}
+    # output_file = open("output_file.json", "w")
+    # pickle.dump(output, output_file)
+    with open('output_file.json', 'w') as f:
+        json.dump(output, f)
+    f.close()
+else:
+    flat = []
+    for item in file:
+        flat.append(" ".join(["{0}_{1}".format(token.type, token.value.replace(' ', '-')) for token in item]))
+    tfidf_score = tfidf_vector.transform(flat)
+    predict = Randomforest.predict(tfidf_score)
+    predict_prob = Randomforest.predict_proba(tfidf_score)
+    proba = [predict_prob[i][1] for i in range(len(staticscripts)) if predict[i] == 1]
+    scripts = [staticscripts[i] for i in range(len(staticscripts)) if predict[i] == 1]
+    output = {"Malicious": bool(max(predict)), "Event": str(scripts).strip('[]'),
+              "Confidence": str(proba).strip('[]'), "Multicase": "-----------"}
+    # output_file = open("output_file.json", "w")
+    # pickle.dump(output, output_file)
+    with open('output_file.json', 'w+') as f:
+        json.dump(output, f)
+    f.close()
 
-tfidf_score = tfidf_vector.transform([flat])
-predict = Randomforest.predict(tfidf_score)
-
-output = {"Malicious": bool(predict), "Event": staticscripts, "Confidence":Randomforest.predict_proba(tfidf_score).max(), "Multicase": "-----------"}
-#output_file = open("output_file.json", "w")
-#pickle.dump(output, output_file)
-with open('output_file.json', 'w') as f:
-    json.dump(output, f)
-f.close()
-#output_file.close()
